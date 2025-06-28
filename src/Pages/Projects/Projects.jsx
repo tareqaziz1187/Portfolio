@@ -49,7 +49,7 @@ const sliderSettings = {
 
 const Projects = () => {
   return (
-    <section className="max-w-6xl mx-auto px-4 py-16">
+    <section className="max-w-7xl mx-auto px-4 py-16 bg-gradient-to-br from-white via-gray-100 to-gray-200 dark:from-[#1a1a2e] dark:via-[#16213e] dark:to-[#0f3460]">
       <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
 
       <div className="grid gap-12">

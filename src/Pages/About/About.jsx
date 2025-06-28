@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaUser } from "react-icons/fa";
+import Profile from "../../assets/DSC_0002.JPG"
 
 const About = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-white dark:bg-gray-900 px-6 py-12">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-gray-100 to-gray-200 dark:from-[#1a1a2e] dark:via-[#16213e] dark:to-[#0f3460]">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Image Section */}
         <motion.div
@@ -15,7 +16,7 @@ const About = () => {
           className="w-64 h-64 rounded-full overflow-hidden shadow-xl border-4 border-blue-500"
         >
           <img
-            src="/profile.png"
+            src={Profile}
             alt="Tareq Aziz"
             className="w-full h-full object-cover"
           />

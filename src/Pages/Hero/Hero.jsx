@@ -1,43 +1,35 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import Profile from "../../assets/DSC_0002.JPG";
+import HeroBG from "../../assets/Hero background.jpg";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-gray-100 to-gray-200 dark:from-[#1a1a2e] dark:via-[#16213e] dark:to-[#0f3460] ">
-      <div className="z-10 container mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12">
+    <section
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-gray-100 to-gray-200 dark:from-[#1a1a2e] dark:via-[#16213e] dark:to-[#0f3460] bg-cover bg-center relative"
+      // style={{
+      //   backgroundImage: `url(${HeroBG})`,
+      //   backgroundBlendMode: "overlay",
+      // }}
+    >
+      <div className="z-10 container mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12 backdrop-blur-sm bg-white/20 dark:bg-black/30 p-8 rounded-xl shadow-xl">
         {/* Text Section */}
         <motion.div
-          className="flex-1 text-white text-center md:text-left"
+          className="flex-1 text-gray-900 dark:text-white text-center md:text-left"
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
           <h1 className="text-4xl md:text-5xl font-bold">
-            Hi, I'm <span className="text-blue-400">Tareq Aziz</span>
+            Hi, I'm <span className="text-blue-600 dark:text-blue-400">Tareq Aziz</span>
           </h1>
           <motion.p
-            className="mt-4 text-xl md:text-2xl text-cyan-200"
+            className="mt-4 text-xl md:text-2xl text-gray-700 dark:text-cyan-200"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
             Frontend Developer & UI Enthusiast
           </motion.p>
-          <div className="mt-6 flex justify-center md:justify-start gap-4">
-            <Link
-              to="/projects"
-              className="px-6 py-2 bg-blue-600 text-white rounded-2xl hover:bg-blue-700 transition"
-            >
-              View My Work
-            </Link>
-            <Link
-              to="/contact"
-              className="px-6 py-2 border border-blue-500 text-blue-500 rounded-2xl hover:bg-blue-100 transition"
-            >
-              Contact Me
-            </Link>
-          </div>
         </motion.div>
 
         {/* Image Section */}
@@ -49,7 +41,7 @@ const Hero = () => {
         >
           <div className="relative group">
             <img
-              src="/profile.png"
+              src={Profile}
               alt="Tareq Aziz"
               className="w-72 h-72 rounded-full object-cover border-4 border-white shadow-xl transition-transform duration-500 group-hover:scale-105"
             />

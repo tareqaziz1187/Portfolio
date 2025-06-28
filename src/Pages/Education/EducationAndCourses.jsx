@@ -47,7 +47,7 @@ const cardVariants = {
 
 const EducationAndCourses = () => {
   return (
-    <section className="max-w-6xl mx-auto px-4 py-20">
+    <section className="max-w-7xl mx-auto px-4 py-20 bg-gradient-to-br from-white via-gray-100 to-gray-200 dark:from-[#1a1a2e] dark:via-[#16213e] dark:to-[#0f3460]">
       <motion.h2
         className="text-5xl font-extrabold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500"
         initial={{ opacity: 0 }}

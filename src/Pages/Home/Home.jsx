@@ -4,6 +4,8 @@ import About from '../About/About';
 import Projects from '../Projects/Projects';
 import Education from '../Education/EducationAndCourses';
 import EducationAndCourses from '../Education/EducationAndCourses';
+import Skills from '../Skills/Skills';
+import Contact from '../Contact/Contact';
 
 
 const Home = () => {
@@ -13,6 +15,8 @@ const Home = () => {
             <About></About>
             <Projects></Projects>
             <EducationAndCourses></EducationAndCourses>
+            <Skills></Skills>
+            <Contact></Contact>
         </div>
     );
 };
