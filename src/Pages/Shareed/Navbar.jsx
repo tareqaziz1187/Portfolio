@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router';
+import { FaDownload } from "react-icons/fa6";
 
 const Navbar = () => {
     return (
@@ -30,7 +31,13 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Resume</a>
+    <a
+  href="/public/CV Resume.pdf"
+  download
+  className="bg-gray-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition flex gap-2 items-center"
+>
+ <FaDownload />Resume
+</a>
   </div>
 </div>
     );

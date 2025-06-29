@@ -2,6 +2,9 @@ import React, { useRef } from "react";
 import { FaEnvelope, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 const Contact = () => {
   const formRef = useRef();
@@ -63,6 +66,14 @@ const Contact = () => {
               <p className="text-gray-600 dark:text-gray-400">+8801517854691</p>
             </div>
           </div>
+          <div className="flex items-center gap-4">
+            
+            <div className="flex gap-3">
+                <a href="https://github.com/tareqaziz1187"><FaGithub size={25}/></a>
+                <a href="https://www.linkedin.com/in/tareq-aziz-185373268/"><FaLinkedinIn size={25} color="blue" /></a>
+                <a href="https://x.com/TareqAz39544483"><FaTwitter size={25} color="blue"/></a>
+            </div>
+          </div>
         </motion.div>
 
         {/* Contact Form */}
@@ -114,7 +125,7 @@ const Contact = () => {
         >
           <iframe
             title="Location Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.903376850097!2d90.39101701538443!3d23.75090319479348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b91fe54a8d9f%3A0xab282cf3de54e6f3!2sDhaka!5e0!3m2!1sen!2sbd!4v1682652389204!5m2!1sen!2sbd"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29182.388045181982!2d90.32544095!3d23.896762699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1751166694690!5m2!1sen!2sbd"
             width="100%"
             height="100%"
             allowFullScreen=""
