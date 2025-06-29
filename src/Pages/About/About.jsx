@@ -46,7 +46,7 @@ const About = () => {
           <div className="mt-6">
             <Link
               to="/projects"
-              className="inline-block px-6 py-2 bg-blue-600 text-white rounded-2xl hover:bg-blue-700 transition"
+              className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-2 rounded-full font-medium hover:scale-105 transition transform duration-300 shadow-md"
             >
               View Projects
             </Link>

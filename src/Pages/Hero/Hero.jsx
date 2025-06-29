@@ -1,15 +1,32 @@
 import { motion } from "framer-motion";
 import Profile from "../../assets/DSC_0002.JPG";
-import HeroBG from "../../assets/Hero background.jpg";
+import { useEffect, useState } from "react";
+
 
 const Hero = () => {
+
+  // extra
+const fullText = "Frontend Developer & UI Enthusiast.\nCrafting engaging UIs with React ⚛️,\nPassionate about clean code & great user experience.";
+
+const [displayedText, setDisplayedText] = useState("");
+
+useEffect(() => {
+  let index = 0;
+  const timer = setInterval(() => {
+    setDisplayedText(fullText.slice(0, index + 1));
+    index++;
+    if (index === fullText.length) clearInterval(timer);
+  }, 30);
+  return () => clearInterval(timer);
+}, []);
+
+
+
+
   return (
     <section
       className="min-h-screen flex items-center justify-center bg-gradient-to-br from-white via-gray-100 to-gray-200 dark:from-[#1a1a2e] dark:via-[#16213e] dark:to-[#0f3460] bg-cover bg-center relative"
-      // style={{
-      //   backgroundImage: `url(${HeroBG})`,
-      //   backgroundBlendMode: "overlay",
-      // }}
+     
     >
       <div className="z-10 container mx-auto px-6 flex flex-col-reverse md:flex-row items-center gap-12 backdrop-blur-sm bg-white/20 dark:bg-black/30 p-8 rounded-xl shadow-xl">
         {/* Text Section */}
@@ -22,14 +39,31 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl font-bold">
             Hi, I'm <span className="text-blue-600 dark:text-blue-400">Tareq Aziz</span>
           </h1>
-          <motion.p
+          {/* <motion.p
             className="mt-4 text-xl md:text-2xl text-gray-700 dark:text-cyan-200"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
             Frontend Developer & UI Enthusiast
-          </motion.p>
+
+            Crafting engaging UIs with React ⚛️ 
+            
+            Passionate about clean code & great user experience.
+
+          </motion.p> */}
+
+           <motion.p
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 2 }}
+  className="mt-4 text-xl md:text-xl text-gray-700 dark:text-cyan-200 whitespace-pre-line"
+>
+  {displayedText}
+</motion.p>
+
+
+
         </motion.div>
 
         {/* Image Section */}

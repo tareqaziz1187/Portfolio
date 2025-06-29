@@ -5,15 +5,15 @@ import { FaGraduationCap, FaCertificate } from "react-icons/fa";
 const education = [
   {
     title: "B.Sc. in Computer Science",
-    institution: "DUET",
-    year: "2020 – 2024",
+    institution: "ASIAN UNIVERSITY",
+    year: "2021 – 2025",
     details: "Focused on software engineering and full-stack development.",
   },
   {
     title: "H.S.C. in Science",
-    institution: "Govt. XYZ College",
+    institution: "Govt. K.C College",
     year: "2017 – 2019",
-    details: "Studied Physics, Chemistry, Higher Math.",
+    details: "Studied Physics, Chemistry, Biology , Higher Math.",
   },
 ];
 
@@ -21,13 +21,13 @@ const courses = [
   {
     title: "Full-Stack Web Development",
     provider: "Programming Hero",
-    year: "2024",
+    year: "2025",
     details: "Built real-world projects using React, Node.js, MongoDB, and Firebase.",
   },
   {
     title: "JavaScript Mastery",
     provider: "Udemy",
-    year: "2023",
+    year: "2024",
     details: "Deep dive into ES6+, DOM, async/await, and API integration.",
   },
 ];
